@@ -1,0 +1,10 @@
+services:
+  database:
+    container_name: comments_database
+    image: postgres
+    environment:
+      POSTGRES_USER: comments_postgres
+      POSTGRES_PASSWORD: comments_postgres
+      POSTGRES_NAME: comments_db
+    ports:
+      - "5434:5432"
