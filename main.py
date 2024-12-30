@@ -1,7 +1,7 @@
 import uvicorn
 from fastapi import FastAPI
 
-from api import comments_router
+from api.handlers import comments_router
 
 
 app_comments = FastAPI()
