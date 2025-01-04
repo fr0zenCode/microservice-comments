@@ -6,9 +6,9 @@ from asyncpg import exceptions
 from sqlalchemy import exc, insert, select, delete
 from starlette.responses import JSONResponse
 
-from database.engine import async_session_factory
-from database.models import Comments
-from database.schemas import CommentSchemaAdd, CommentSchema
+from app.database.engine import async_session_factory
+from app.database.models import Comments
+from app.database.schemas import CommentSchemaAdd, CommentSchema
 
 
 class AbstractCommentsCRUD(ABC):

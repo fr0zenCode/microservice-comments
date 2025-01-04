@@ -2,7 +2,7 @@ import asyncio
 
 from aiokafka import AIOKafkaConsumer, AIOKafkaProducer
 
-from message_brokers.core import KafkaMessageBroker
+from app.message_brokers import KafkaMessageBroker
 
 
 kafka_message_broker = KafkaMessageBroker(
