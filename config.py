@@ -23,7 +23,6 @@ class Settings(BaseSettings):
 
     @property
     def database_url_asyncpg(self):
-        print(self.COMMENTS_DB_HOST)
         return (f"postgresql+asyncpg://{self.COMMENTS_DB_USER}:"
                 f"{self.COMMENTS_DB_PASS}@"
                 f"{self.COMMENTS_DB_HOST}:"
