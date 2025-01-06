@@ -14,7 +14,7 @@ if config.config_file_name is not None:
 
 config.set_main_option("sqlalchemy.url", settings.database_url_asyncpg + "?async_fallback=True")
 
-from database.models import Base, Comments # noqa
+from app.database.core.models import Base, Comments # noqa
 target_metadata = Base.metadata
 
 
