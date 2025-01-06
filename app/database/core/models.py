@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Mapped, mapped_column
 
-from .engine import Base
-from .schemas import CommentSchema
+from app.database.core.engine import Base
+from app.database.schemas import CommentSchema
 
 
 class Comments(Base):
