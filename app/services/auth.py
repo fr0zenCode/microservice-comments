@@ -27,5 +27,10 @@ class AuthService:
         ...
 
     def authorize_request(self, request, bearer_mode=False, cookie_mode=True):
-        ...
+
+        if bearer_mode:
+            return self.get_bearer_from_request_header(request)
+
+        if cookie_mode:
+            return self.get_token_from_cookie(request)
 
